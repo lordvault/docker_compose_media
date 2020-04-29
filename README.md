@@ -1,6 +1,6 @@
 <h1>Docker Media component</h1>
 
-This docker compose proyect was created to move on an easy way the different application that i use for manage the media repositories.<br>
+This docker-compose project was created to move on an easy way the different application that i use for manage the media repositories.<br>
 
 Components: 
  - Radarr (Movies)
@@ -12,7 +12,7 @@ Components:
 
 <br>
 
-The configuration for this project is based on the following filepath:
+The configuration for this project is based on the following file path:
  ```
  -mnt
  |-media
@@ -29,7 +29,7 @@ The configuration for this project is based on the following filepath:
 |**tv_shows**  |The series location                           |
 
 
-By default all the information is stored on the /mnt/media folder, but you can create syms lynks to use your locations, or update the docker-compose.yml with your custom folders.<br>
+By default, all the information is stored on the /mnt/media folder, but you can create syms lynks to use your locations, or update the docker-compose.yml with your custom folders.<br>
 
 <h3>Docker env file</h3>
 
@@ -59,12 +59,12 @@ As you can see there are some properties required by each container.
 |TZ      | Your timezone, for some containers, better have all with the same region                                           |
 
 
-Usefull commands: </br>
-- PUID and PGID can be found ussing ``` id $user ``` on a linux shell.
-- DOCKER_PGID can be retrieved with the command ```grep docker /etc/group | cut -d ':' -f 3  ``` only works when you have docker installed directly on your system (dont work when you have docker installed using snap).
+Useful commands: </br>
+- PUID and PGID can be found using ``` id $user ``` on a linux shell.
+- DOCKER_PGID can be retrieved with the command ```grep docker /etc/group | cut -d ':' -f 3  ``` only works when you have docker installed directly on your system (don't work when you have docker installed using snap).
 
 
-Usefull steps:
+Useful steps:
 
 
 FSTAB configuration for NTFS disks
