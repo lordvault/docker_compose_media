@@ -58,7 +58,6 @@ As you can see there are some properties required by each container.
 |TR_PASS | This is the password defined for transmission                                                                      |
 |TZ      | Your timezone, for some containers, better have all with the same region                                           |
 
-grep docker /etc/group | cut -d ':' -f 3
 
 Usefull commands: </br>
 - PUID and PGID can be found ussing ``` id $user ``` on a linux shell.
@@ -71,7 +70,7 @@ Usefull steps:
 FSTAB configuration for NTFS disks
 - Configure the system to mount disk on startup.
 
-  UUID=055577F83C6CFCAA /media/lordvault/055577F83C6CFCAA   ntfs   defaults  0  2
+  UUID=055577F83C6CFCAA /media/lordvault/055577F83C6CFCAA   ntfs   defaults  0  2<br>
   UUID=69B2BC0B12B958CC /media/lordvault/69B2BC0B12B958CC   ntfs   defaults  0  2
 
 
