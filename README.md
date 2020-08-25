@@ -73,6 +73,9 @@ FSTAB configuration for NTFS disks
   UUID=055577F83C6CFCAA /media/lordvault/055577F83C6CFCAA   ntfs   defaults  0  2<br>
   UUID=69B2BC0B12B958CC /media/lordvault/69B2BC0B12B958CC   ntfs   defaults  0  2
 
+- Configure local NAS:
+  //192.168.0.XXX/share /mnt/z cifs username=admin,password=ThePassword,vers=1.0,auto,x-systemd.automount,uid=1000,guid=1000
+  (you need to verify the compatible samba version, for my ls220de works with the 1.0 from linux).
 
 Create syms lynks.
 - ln -s /media/lordvault/055577F83C6CFCAA/media/ /mnt/media/
